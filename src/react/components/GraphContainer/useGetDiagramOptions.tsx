@@ -9,7 +9,7 @@ import { theme } from "../../../styles/theme";
 type PropsType = {
   graphSize: GraphSize;
   graphDirection: GraphDirection;
-  graphContainer: React.RefObject<HTMLDivElement>;
+  graphContainer: React.RefObject<HTMLDivElement | null>;
   graphHorizontalSpacing: number;
 };
 

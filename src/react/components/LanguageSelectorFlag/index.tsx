@@ -1,4 +1,5 @@
-import { type CountryEnum, dynamicImageImporter } from "@nexus/nexusExporter";
+import { dynamicAssetsImporterHelper } from "@nexus/helpers/media/image/dynamicAssetsImporter.helper";
+import { type CountryEnum } from "@nexus/nexusExporter";
 import React from "react";
 
 type PropsType = {
@@ -11,7 +12,7 @@ export const LanguageSelectorFlag = ({
   return (
     <img
       alt={`Country flag of ${country}`}
-      src={dynamicImageImporter(`languagesFlags/${country}.png`)}
+      src={dynamicAssetsImporterHelper(`images/languagesFlags/${country}.png`)}
     />
   );
 };
