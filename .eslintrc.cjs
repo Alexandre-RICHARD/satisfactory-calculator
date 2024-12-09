@@ -22,5 +22,11 @@ module.exports = {
         "import/no-unused-modules": "off",
       }
     },
+    {
+      files: ["src/types/satisfactory/apis/dataTransferObject/**"],
+      rules: {
+        "import/no-unused-modules": "off",
+      },
+    },
   ],
 };
