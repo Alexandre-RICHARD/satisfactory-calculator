@@ -13,7 +13,7 @@ export const SideBarNavigation = (): React.JSX.Element => {
   const linkGroups = [
     [
       {
-        label: "Satisfactory calculator",
+        label: t(TF.COMMON, "homepage"),
         link: "/",
       },
       {
@@ -27,7 +27,13 @@ export const SideBarNavigation = (): React.JSX.Element => {
     ],
     [
       {
-        label: "Settings",
+        label: t(TF.COMMON, "machines"),
+        link: "/frm/allMachines",
+      },
+    ],
+    [
+      {
+        label: t(TF.COMMON, "settings"),
         link: "/settings",
       },
     ],

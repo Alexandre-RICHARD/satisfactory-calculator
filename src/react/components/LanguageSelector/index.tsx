@@ -78,7 +78,7 @@ export const LanguagesSelector = (): React.JSX.Element => {
       }
       items={languagesSelectOption}
       selectedItem={language}
-      position="bottom-left"
+      position="bottom-right"
       onSelect={(item) => setLanguage(item as LanguageCodeEnum)}
     />
   );
