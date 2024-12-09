@@ -1,9 +1,9 @@
 import type { GameClassNamesEnum } from "../../../../enums/gameClassNames.enum";
 
 export type GeneratorFm = {
-  id: string;
+  name: string;
   className: GameClassNamesEnum;
-  isFullSpeed: boolean;
-  isGeneratorCanStart: boolean;
-  dynamicProductionCapacity: number;
+  overclocking: number;
+  isAtFullSpeed: boolean;
+  powerProduction: number;
 };

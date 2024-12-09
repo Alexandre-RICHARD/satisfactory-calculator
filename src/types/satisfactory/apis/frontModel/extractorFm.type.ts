@@ -1,10 +1,9 @@
 import type { GameClassNamesEnum } from "../../../../enums/gameClassNames.enum";
 
-export type RecipeItemFm = {
+export type ExtractorFm = {
   name: string;
   className: GameClassNamesEnum;
-  amount: number;
-  currentUsage: number;
-  maxUsage: number;
-  usingPercent: number;
+  overclocking: number;
+  efficiency: number;
+  powerConsumption: number;
 };
