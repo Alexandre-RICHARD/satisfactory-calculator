@@ -1,4 +1,4 @@
-import type { DroneStationStatusEnum } from "../../../enums/droneStationStatus.enum";
+import type { DroneStationStatusEnum } from "../../../../enums/droneStationStatus.enum";
 
 export type DroneStationFm = {
   name: string;

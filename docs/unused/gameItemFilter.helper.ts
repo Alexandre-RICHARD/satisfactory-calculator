@@ -1,10 +1,10 @@
-import { GameBuildingsTypeEnum } from "../enums/gameBuildingsType.enum";
-import type { GameClassNamesEnum } from "../enums/gameClassNames.enum";
-import { GameItemsCategoryEnum } from "../enums/gameItemsCategory.enum";
-import type { GameItems } from "../types/satisfactory/gameItems/gameItems";
-import type { GameItemGeneratorBuilding } from "../types/satisfactory/gameItems/generatorBuilding";
-import type { GameItemManufacturerBuilding } from "../types/satisfactory/gameItems/manufacturerBuilding";
-import type { GameItemsDictionnary } from "../types/satisfactory/gameItemsDictionary";
+import { GameBuildingsTypeEnum } from "../../src/enums/gameBuildingsType.enum";
+import type { GameClassNamesEnum } from "../../src/enums/gameClassNames.enum";
+import { GameItemsCategoryEnum } from "../../src/enums/gameItemsCategory.enum";
+import type { GameItems } from "../../src/types/satisfactory/gameItems/gameItems.type";
+import type { GameItemGeneratorBuilding } from "../../src/types/satisfactory/gameItems/generatorBuilding.type";
+import type { GameItemManufacturerBuilding } from "../../src/types/satisfactory/gameItems/manufacturerBuilding.type";
+import type { GameItemsDictionnary } from "../../src/types/satisfactory/gameItemsDictionary.type";
 
 type Args = {
   gameItemsDictionnary: GameItemsDictionnary;

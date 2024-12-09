@@ -1,5 +1,5 @@
-import { gameItemsDictionnary } from "../dictionnaries/gameItems.dictionary";
-import type { GameClassNamesEnum } from "../enums/gameClassNames.enum";
+import { gameItemsDictionnary } from "../../src/dictionnaries/gameItems.dictionary";
+import type { GameClassNamesEnum } from "../../src/enums/gameClassNames.enum";
 
 export const getImageHelper = (className: GameClassNamesEnum): string => {
   const item = gameItemsDictionnary[className];

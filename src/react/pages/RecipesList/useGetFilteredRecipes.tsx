@@ -1,7 +1,7 @@
 import { stringSearcher } from "@nexus/nexusExporter";
 
 import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
-import type { RecipeType } from "../../../types/satisfactory/recipe";
+import type { RecipeType } from "../../../types/satisfactory/recipe.type";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 
 type PropsType = {

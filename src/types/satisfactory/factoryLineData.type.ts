@@ -1,4 +1,4 @@
-import type { InitialRawResource } from "./initialRawResource";
+import type { InitialRawResource } from "./initialRawResource.type";
 
 export type FactoryLineData = {
   rawResources?: InitialRawResource[];

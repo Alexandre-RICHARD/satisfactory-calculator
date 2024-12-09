@@ -1,7 +1,7 @@
 import { CraftBuildingsEnum } from "../enums/craftBuildings.enum";
 import { ItemsEnum } from "../enums/items.enum";
 import { RecipesEnum } from "../enums/recipes.enum";
-import type { RecipeType } from "../types/satisfactory/recipe";
+import type { RecipeType } from "../types/satisfactory/recipe.type";
 
 // TODO A => POur trouver les doublons, on va attendre de finir le jeu pour voir ça
 // const doubleOutputRecipes = recipes

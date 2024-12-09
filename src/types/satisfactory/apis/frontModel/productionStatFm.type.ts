@@ -1,5 +1,5 @@
+import type { GameClassNamesEnum } from "../../../../enums/gameClassNames.enum";
 import type { GameItemsEnum } from "../../../../enums/gameItems.enum";
-import type { GameClassNamesEnum } from "../../../enums/gameClassNames.enum";
 
 export type ProductionStatFm = {
   name: GameItemsEnum;

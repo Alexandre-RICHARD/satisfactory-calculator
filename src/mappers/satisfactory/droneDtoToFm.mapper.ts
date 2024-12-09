@@ -1,8 +1,8 @@
 import { enumDtoToFmMapper } from "@nexus/nexusExporter";
 
 import { DroneFlyingModeEnum } from "../../enums/droneFlyingMode.enum";
-import type { DroneDto } from "../../types/satisfactory/apis/dataTransferObject/droneDto";
-import type { DroneFm } from "../../types/satisfactory/apis/frontModel/droneFm";
+import type { DroneDto } from "../../types/satisfactory/apis/dataTransferObject/droneDto.type";
+import type { DroneFm } from "../../types/satisfactory/apis/frontModel/droneFm.type";
 
 export const droneDtoToFmMapper = (dto: DroneDto[]): DroneFm[] => {
   return dto.map((droneDto) => ({

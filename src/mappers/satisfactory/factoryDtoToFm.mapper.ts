@@ -1,8 +1,8 @@
 import { enumDtoToFmMapper } from "@nexus/nexusExporter";
 
 import { GameClassNamesEnum } from "../../enums/gameClassNames.enum";
-import type { FactoryDto } from "../../types/satisfactory/apis/dataTransferObject/factoryDto";
-import type { FactoryFm } from "../../types/satisfactory/apis/frontModel/factoryFm";
+import type { FactoryDto } from "../../types/satisfactory/apis/dataTransferObject/factoryDto.type";
+import type { FactoryFm } from "../../types/satisfactory/apis/frontModel/factoryFm.type";
 
 export const factoryDtoToFmMapper = (dto: FactoryDto[]): FactoryFm[] => {
   return dto.map((factoryDto) => ({

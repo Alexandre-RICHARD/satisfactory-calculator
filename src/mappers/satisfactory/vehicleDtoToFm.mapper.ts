@@ -2,8 +2,8 @@ import { enumDtoToFmMapper } from "@nexus/nexusExporter";
 
 import { gameItemsDictionnary } from "../../dictionnaries/gameItems.dictionary";
 import { GameClassNamesEnum } from "../../enums/gameClassNames.enum";
-import type { VehicleDto } from "../../types/satisfactory/apis/dataTransferObject/vehicleDto";
-import type { VehicleFm } from "../../types/satisfactory/apis/frontModel/vehicleFm";
+import type { VehicleDto } from "../../types/satisfactory/apis/dataTransferObject/vehicleDto.type";
+import type { VehicleFm } from "../../types/satisfactory/apis/frontModel/vehicleFm.type";
 
 export const vehicleDtoToFmMapper = (dto: VehicleDto[]): VehicleFm[] => {
   return dto.map((vehicleDto) => {

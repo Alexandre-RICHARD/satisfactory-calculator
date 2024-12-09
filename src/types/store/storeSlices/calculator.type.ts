@@ -1,6 +1,6 @@
-import type { FactoryLine } from "../../satisfactory/factoryLine";
-import type { FactoryLineData } from "../../satisfactory/factoryLineData";
-import type { SelectedFactoryLineData } from "../../satisfactory/selectedFactoryLineData";
+import type { FactoryLine } from "../../satisfactory/factoryLine.type";
+import type { FactoryLineData } from "../../satisfactory/factoryLineData.type";
+import type { SelectedFactoryLineData } from "../../satisfactory/selectedFactoryLineData.type";
 
 export type CalculatorSliceType = {
   minuteCalculation: boolean;

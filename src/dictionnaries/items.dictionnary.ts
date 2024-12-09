@@ -1,5 +1,5 @@
 import { ItemsEnum } from "../enums/items.enum";
-import type { ItemsType } from "../types/satisfactory/items";
+import type { ItemsType } from "../types/satisfactory/items.type";
 
 export const items: Record<ItemsEnum, ItemsType> = {
   [ItemsEnum.AI_Limiter]: {

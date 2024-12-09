@@ -8,7 +8,7 @@ import React from "react";
 import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
 import { powerCalculation } from "../../../helpers/powerCalculation.helper";
 import { useCombinedStore } from "../../../store/combined.store";
-import type { RecipeType } from "../../../types/satisfactory/recipe";
+import type { RecipeType } from "../../../types/satisfactory/recipe.type";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 import { ResourceBox } from "./resourceBox";
 import styles from "./styles.module.scss";

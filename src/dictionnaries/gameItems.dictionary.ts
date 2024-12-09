@@ -4,7 +4,7 @@ import { GameClassNamesEnum } from "../enums/gameClassNames.enum";
 import { GameItemsEnum } from "../enums/gameItems.enum";
 import { GameItemsCategoryEnum } from "../enums/gameItemsCategory.enum";
 import { GameResourcesTypeEnum } from "../enums/gameResourcesType.enum";
-import type { GameItemsDictionnary } from "../types/satisfactory/gameItemsDictionary";
+import type { GameItemsDictionnary } from "../types/satisfactory/gameItemsDictionary.type";
 
 export const gameItemsDictionnary: GameItemsDictionnary = {
   // Raw resources items

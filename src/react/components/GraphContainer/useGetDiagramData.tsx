@@ -4,7 +4,7 @@ import type { Edge, Node } from "vis-network";
 import { TranslationsFilesEnum as TF } from "../../../enums/translationsFiles.enum";
 import { stringRemoveEndPxHelper } from "../../../helpers/stringRemoveEndPx.helper";
 import { theme } from "../../../styles/theme";
-import type { FactoryLine } from "../../../types/satisfactory/factoryLine";
+import type { FactoryLine } from "../../../types/satisfactory/factoryLine.type";
 import { useCustomTranslations } from "../../hooks/useCustomTranslations";
 
 type PropsType = {

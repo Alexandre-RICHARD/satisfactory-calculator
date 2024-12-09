@@ -1,5 +1,5 @@
-import type { InitialRawResource } from "./initialRawResource";
-import type { RecipeType } from "./recipe";
+import type { InitialRawResource } from "./initialRawResource.type";
+import type { RecipeType } from "./recipe.type";
 
 export type FactoryLine = {
   id: string;

@@ -1,4 +1,4 @@
-import type { TrainStationLoadingStatusEnum } from "../../../enums/trainStationLoadingStatus.enum";
+import type { TrainStationLoadingStatusEnum } from "../../../../enums/trainStationLoadingStatus.enum";
 
 export type TrainStationFm = {
   name: string;

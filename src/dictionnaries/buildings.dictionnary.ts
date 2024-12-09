@@ -1,7 +1,7 @@
 import { CraftBuildingsEnum } from "../enums/craftBuildings.enum";
 import { ExtractionBuildingsEnum } from "../enums/extractionBuildings.enum";
 import { PowerBuildingsEnum } from "../enums/powerBuildings.enum";
-import type { BuildingsType } from "../types/satisfactory/buildings";
+import type { BuildingsType } from "../types/satisfactory/buildings.type";
 
 export const buildings: Record<
   CraftBuildingsEnum | ExtractionBuildingsEnum | PowerBuildingsEnum,

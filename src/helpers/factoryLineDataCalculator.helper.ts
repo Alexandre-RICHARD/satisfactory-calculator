@@ -1,7 +1,7 @@
 import type { ItemsEnum } from "../enums/items.enum";
-import type { FactoryLine } from "../types/satisfactory/factoryLine";
-import type { FactoryLineData } from "../types/satisfactory/factoryLineData";
-import type { InitialRawResource } from "../types/satisfactory/initialRawResource";
+import type { FactoryLine } from "../types/satisfactory/factoryLine.type";
+import type { FactoryLineData } from "../types/satisfactory/factoryLineData.type";
+import type { InitialRawResource } from "../types/satisfactory/initialRawResource.type";
 
 export const factoryLineDataCalculator = (
   factoryLine: FactoryLine,

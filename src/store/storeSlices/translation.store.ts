@@ -7,7 +7,7 @@ import type { StateCreator } from "zustand";
 
 import { supportedLanguages } from "../../dictionnaries/supportedLanguages.dictionnary";
 import { CookieEnum } from "../../enums/cookie.enum";
-import type { TranslationSliceType } from "../../types/store/storeSlices/translations";
+import type { TranslationSliceType } from "../../types/store/storeSlices/translations.type";
 
 export const useTranslationStore: StateCreator<TranslationSliceType> = (
   set,

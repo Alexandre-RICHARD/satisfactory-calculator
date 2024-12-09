@@ -45,7 +45,7 @@
   "include": [
     "src",
     "src/types"
-  ],
+, "docs/unused/getImage.helper.ts", "docs/unused/gameItemFilter.helper.ts"  ],
   "exclude": [
     "build",
     "nexus",

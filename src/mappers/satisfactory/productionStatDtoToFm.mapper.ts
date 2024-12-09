@@ -2,8 +2,8 @@ import { enumDtoToFmMapper } from "@nexus/nexusExporter";
 
 import { gameItemsDictionnary } from "../../dictionnaries/gameItems.dictionary";
 import { GameClassNamesEnum } from "../../enums/gameClassNames.enum";
-import type { ProdStatsDto } from "../../types/satisfactory/apis/dataTransferObject/prodStatsDto";
-import type { ProductionStatFm } from "../../types/satisfactory/apis/frontModel/productionStatFm";
+import type { ProdStatsDto } from "../../types/satisfactory/apis/dataTransferObject/prodStatsDto.type";
+import type { ProductionStatFm } from "../../types/satisfactory/apis/frontModel/productionStatFm.type";
 
 export const productionStatDtoToFMapper = (
   dto: ProdStatsDto[],

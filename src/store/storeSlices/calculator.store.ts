@@ -1,6 +1,6 @@
 import type { StateCreator } from "zustand";
 
-import type { CalculatorSliceType } from "../../types/store/storeSlices/calculator";
+import type { CalculatorSliceType } from "../../types/store/storeSlices/calculator.type";
 
 export const useCalculatorStore: StateCreator<CalculatorSliceType> = (set) => ({
   minuteCalculation: false,

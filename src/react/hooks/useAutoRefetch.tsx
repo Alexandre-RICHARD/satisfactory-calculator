@@ -9,9 +9,10 @@ import { useEffect, useState } from "react";
 import { defaultFrmSettingsData } from "../../dictionnaries/defaultFrmSettingsData";
 import { endPointDictionnary } from "../../dictionnaries/endPoint.dictionary";
 import type { EndpointEnum } from "../../enums/endpoint.enum";
-import type { MapperFunction } from "../../types/satisfactory/endpoint";
-import type { FrmSettingsData } from "../../types/satisfactory/frmSettingsData";
+import type { MapperFunction } from "../../types/satisfactory/endpoint.type";
+import type { FrmSettingsData } from "../../types/satisfactory/frmSettingsData.type";
 
+// eslint-disable-next-line import/no-unused-modules
 export const useAutoRefetch = <Dto, Fm>(
   endPoint?: EndpointEnum,
   skip?: boolean,

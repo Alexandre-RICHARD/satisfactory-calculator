@@ -2,7 +2,7 @@ import React from "react";
 
 import { itemPerMinute } from "../../../helpers/itemPerMinute.helper";
 import { useCombinedStore } from "../../../store/combined.store";
-import type { ItemsInOutType } from "../../../types/satisfactory/itemsInOut";
+import type { ItemsInOutType } from "../../../types/satisfactory/itemsInOut.type";
 import styles from "./styles.module.scss";
 
 type Props = {

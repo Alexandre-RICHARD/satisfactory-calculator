@@ -1,4 +1,4 @@
-import type { DroneFlyingModeEnum } from "../../../enums/droneFlyingMode.enum";
+import type { DroneFlyingModeEnum } from "../../../../enums/droneFlyingMode.enum";
 
 export type DroneFm = {
   id: string;

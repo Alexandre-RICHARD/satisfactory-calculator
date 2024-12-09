@@ -1,8 +1,8 @@
 import { enumDtoToFmMapper } from "@nexus/nexusExporter";
 
 import { TrainStationLoadingStatusEnum } from "../../enums/trainStationLoadingStatus.enum";
-import type { TrainStationDto } from "../../types/satisfactory/apis/dataTransferObject/trainStationDto";
-import type { TrainStationFm } from "../../types/satisfactory/apis/frontModel/trainStationFm";
+import type { TrainStationDto } from "../../types/satisfactory/apis/dataTransferObject/trainStationDto.type";
+import type { TrainStationFm } from "../../types/satisfactory/apis/frontModel/trainStationFm.type";
 
 export const trainStationDtoToFmMapper = (
   dto: TrainStationDto[],

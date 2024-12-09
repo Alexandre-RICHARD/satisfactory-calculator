@@ -1,4 +1,4 @@
-import type { FrmSettingsData } from "../types/satisfactory/frmSettingsData";
+import type { FrmSettingsData } from "../types/satisfactory/frmSettingsData.type";
 
 export const defaultFrmSettingsData: FrmSettingsData = {
   ip: "localhost",

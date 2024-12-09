@@ -1,5 +1,5 @@
 import { buildings } from "../dictionnaries/buildings.dictionnary";
-import type { RecipeType } from "../types/satisfactory/recipe";
+import type { RecipeType } from "../types/satisfactory/recipe.type";
 
 type Args = {
   recipe: RecipeType;

@@ -1,5 +1,5 @@
-import type { GameClassNamesEnum } from "../../../enums/gameClassNames.enum";
-import type { RecipeItemFm } from "./recipeItemFm";
+import type { GameClassNamesEnum } from "../../../../enums/gameClassNames.enum";
+import type { RecipeItemFm } from "./recipeItemFm.type";
 
 export type FactoryFm = {
   id: string;

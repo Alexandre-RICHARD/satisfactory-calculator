@@ -11,7 +11,7 @@ import { trainDtoToFmMapper } from "../mappers/satisfactory/trainDtoToFm.mapper"
 import { trainStationDtoToFmMapper } from "../mappers/satisfactory/trainStationDtoToFm.mapper";
 import { vehicleDtoToFmMapper } from "../mappers/satisfactory/vehicleDtoToFm.mapper";
 import { worldInvDtoToFmMapper } from "../mappers/satisfactory/worldInvDtoToFm.mapper";
-import type { EndPoint } from "../types/satisfactory/endpoint";
+import type { EndPoint } from "../types/satisfactory/endpoint.type";
 
 export const endPointDictionnary: EndPoint = {
   [EndpointEnum.ASSEMBLER]: factoryDtoToFmMapper,

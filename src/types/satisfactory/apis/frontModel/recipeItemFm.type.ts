@@ -1,4 +1,4 @@
-import type { GameClassNamesEnum } from "../../../enums/gameClassNames.enum";
+import type { GameClassNamesEnum } from "../../../../enums/gameClassNames.enum";
 
 export type RecipeItemFm = {
   name: string;

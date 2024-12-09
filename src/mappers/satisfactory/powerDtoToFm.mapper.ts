@@ -1,5 +1,5 @@
-import type { PowerDto } from "../../types/satisfactory/apis/dataTransferObject/powerDto";
-import type { PowerFm } from "../../types/satisfactory/apis/frontModel/powerFm";
+import type { PowerDto } from "../../types/satisfactory/apis/dataTransferObject/powerDto.type";
+import type { PowerFm } from "../../types/satisfactory/apis/frontModel/powerFm.type";
 
 export const powerDtoToFmMapper = (dto: PowerDto[]): PowerFm[] => {
   return dto.map((powerDto) => ({

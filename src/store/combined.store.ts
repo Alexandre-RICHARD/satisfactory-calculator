@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
-import type { CombinedStoreType } from "../types/store/combinedStore";
+import type { CombinedStoreType } from "../types/store/combinedStore.type";
 import { useCalculatorStore } from "./storeSlices/calculator.store";
 import { useTranslationStore } from "./storeSlices/translation.store";
 
