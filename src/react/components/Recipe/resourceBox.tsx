@@ -1,4 +1,3 @@
-import { dynamicAssetsImporterHelper } from "@nexus/helpers/media/image/dynamicAssetsImporter.helper";
 import React from "react";
 
 import { itemPerMinute } from "../../../helpers/itemPerMinute.helper";
@@ -32,9 +31,12 @@ export const ResourceBox = ({
       <img
         className={styles.resource_icon}
         alt={`Icon of ${resource.itemName} satisfactory resource`}
-        src={dynamicAssetsImporterHelper(
-          `images/satisfactory/gameItems/Resource/${resource.itemName}.png`,
-        )}
+        src={
+          new URL(
+            `/src/assets/images/satisfactory/gameItems/Resource/${resource.itemName}.png`,
+            import.meta.url,
+          ).href
+        }
       />
       <p className={styles.resource_count}>
         {getItemCount(resource.quantityPerCycle)}

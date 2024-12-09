@@ -1,4 +1,3 @@
-import { dynamicAssetsImporterHelper } from "@nexus/helpers/media/image/dynamicAssetsImporter.helper";
 import { type CountryEnum } from "@nexus/nexusExporter";
 import React from "react";
 
@@ -12,7 +11,12 @@ export const LanguageSelectorFlag = ({
   return (
     <img
       alt={`Country flag of ${country}`}
-      src={dynamicAssetsImporterHelper(`images/languagesFlags/${country}.png`)}
+      src={
+        new URL(
+          `/src/assets/images/languagesFlags/${country}.png`,
+          import.meta.url,
+        ).href
+      }
     />
   );
 };
