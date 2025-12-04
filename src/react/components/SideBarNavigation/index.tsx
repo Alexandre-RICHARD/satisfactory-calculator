@@ -1,5 +1,5 @@
 import { roundNumber } from "@nexus/nexusExporter";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { EndpointEnum } from "../../../enums/endpoint.enum";
@@ -19,9 +19,28 @@ export const SideBarNavigation = (): React.JSX.Element => {
     WorldInventoryFM[]
   >(EndpointEnum.WORLD_INVENTORY);
   const [isSideBarLarge, setIsSideBarLarge] = useState(false);
-  const giftCount = worldInventory?.find(
-    (item) => item.className === GameClassNamesEnum.Desc_Gift_C,
-  )?.amount;
+
+  const [currentGift, setCurrentGift] = useState(0);
+  const [lastDifference, setLastDifference] = useState<number[]>([]);
+
+  useEffect(() => {
+    const giftValue =
+      worldInventory?.find(
+        (item) => item.className === GameClassNamesEnum.Desc_Gift_C,
+      )?.amount ?? 0;
+    setCurrentGift((prev) => {
+      const isNull = prev === 0;
+      if (!isNull) {
+        const difference = giftValue - prev;
+        setLastDifference((prev5Mintes) => {
+          const newArray = [...prev5Mintes, difference];
+          if (newArray.length > 30) newArray.shift();
+          return newArray;
+        });
+      }
+      return giftValue;
+    });
+  }, [worldInventory]);
 
   const linkGroups = [
     [
@@ -79,8 +98,17 @@ export const SideBarNavigation = (): React.JSX.Element => {
           </div>
         ))}
         <div className="flex center flex-col p-3">
-          <p>{giftCount} gift</p>
-          <p>{roundNumber((giftCount ?? 0) / 2025 / 60, 2)} h</p>
+          <p>{currentGift} gift</p>
+          <p>{roundNumber(currentGift / 2025 / 60, 2)} h</p>
+          <p>
+            {roundNumber(
+              (lastDifference.reduce((a, v) => a + v, 0) /
+                lastDifference.length) *
+                6,
+              1,
+            )}{" "}
+            gift / min (last 5 min)
+          </p>
         </div>
         <LanguagesSelector />
       </div>
